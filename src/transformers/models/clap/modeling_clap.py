@@ -1671,6 +1671,7 @@ class ClapPreTrainedModel(PreTrainedModel):
     config_class = ClapConfig
     base_model_prefix = "clap"
     supports_gradient_checkpointing = False
+    _no_split_modules = []
 
     def _init_weights(self, module):
         """Initialize the weights"""
